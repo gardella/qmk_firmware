@@ -118,7 +118,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case ONEP:
       if (record->event.pressed) {
         // when keycode QMKBEST is pressed
-        SEND_STRING("D!@b3t3s5250");
+        SEND_STRING("");
       } else {
         // when keycode QMKBEST is released
       }
@@ -126,15 +126,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case TWO:
       if (record->event.pressed) {
         // when keycode QMKBEST is pressed
-        SEND_STRING("Tr!umphT120");
-      } else {
-        // when keycode QMKBEST is released
-      }
-      break;
-    case TWOTAP:
-      if (record->event.pressed) {
-        // when keycode QMKBEST is pressed
-	SEND_STRING(SS_DOWN(X_LSHIFT)SS_TAP(X_B)SS_TAP(X_1)SS_UP(X_LSHIFT)SS_TAP(X_K)SS_TAP(X_I)SS_TAP(X_N)SS_TAP(X_G)SS_DOWN(X_LSHIFT)SS_TAP(X_R)SS_UP(X_LSHIFT)SS_TAP(X_1)SS_TAP(X_V)SS_TAP(X_E)SS_TAP(X_R));
+        SEND_STRING("");
       } else {
         // when keycode QMKBEST is released
       }
