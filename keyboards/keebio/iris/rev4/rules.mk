@@ -16,8 +16,9 @@ BOOTLOADER = qmk-dfu
 #   the appropriate keymap folder that will get included automatically
 #
 
+LTO_ENABLE = yes            # Enabled to free space on board
 BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration
-MOUSEKEY_ENABLE = no        # Mouse keys
+MOUSEKEY_ENABLE = yes       # Mouse keys
 EXTRAKEY_ENABLE = yes       # Audio control and System control
 CONSOLE_ENABLE = yes        # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
@@ -32,4 +33,4 @@ RGBLIGHT_ENABLE = yes       # Enable WS2812 RGB underlight.
 SLEEP_LED_ENABLE = no    # Breathing sleep LED during USB suspend
 
 SPLIT_KEYBOARD = yes
-ENCODER_ENABLE = yes
+ENCODER_ENABLE = no

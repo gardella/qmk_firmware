@@ -158,12 +158,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
         | RESET    | Held: Layer 2   | Media Stop |
         | MOOM7    | MOOM8           | MOOM9  |
-        | TWOTAP   | MOOM0           | ONEP |
+        |MUTE TEAMS| MOOM0           | MUTE SLACK |
      */
     [1] = LAYOUT(
         RESET, _______, KC_STOP,
         MOOM7, MOOM8, MOOM9,
-        TWO, MOOM0, ONEP
+        LGUI(LSFT(KC_M)), MOOM0, KC_M
     ),
 };
 
@@ -177,9 +177,9 @@ void encoder_update_user(uint8_t index, bool clockwise) {
     }
     else if (index == 1) {
         if (clockwise) {
-            tap_code(KC_BRMD);
+            tap_code(KC_PGDN);
         } else {
-            tap_code(KC_BRMU);
+            tap_code(KC_PGUP);
         }
     }
 }
